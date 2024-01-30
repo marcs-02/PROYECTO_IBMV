@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-sm-6 mx-auto">
+        <div class="card border-dark">
+            <div class="card-header text-center bg-dark pt-4">
+                <h2 class="text-white">
+                    REGISTRARSE
+                </h2>
+            </div>
+            <div class="card-body">
+                <form action="/users/signup" method="POST">
+                    <div class="form-group mb-3 m-4 my-3">
+                        <input type="text" class="form-control form-control-lg" name="name" , placeholder="Name" value="{{name}}">
+                    </div>
+                    <div class="form-group mb-3 m-4">
+                        <input type="email" class="form-control form-control-lg" name="email" placeholder="Email" value="{{email}}">
+                    </div>
+                    <div class="form-group mb-3 m-4">
+                        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password"
+                            value="{{password}}">
+                    </div>
+                    <div class="form-group mb-3 m-4">
+                        <input type="password" class="form-control form-control-lg" name="confirm_password" placeholder="Password"
+                            value="{{confirm_password}}">
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="d-grid gap-2 col-7 mx-auto">
+                            <button type="submit" class="btn btn-block btn-lg text-white" style="background: #000046;">
+                                <h5>CREAR CUENTA</h5>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <p class="text-center"> <strong>¿YA TIENES UNA CUENTA?</strong>
+                <a href="/users/signin" class="text-info"> INICIA SECION</a>
+            </p>
+        </div>
+    </div>
+</div>

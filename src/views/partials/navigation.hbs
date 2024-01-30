@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="rounded-circle mx-auto d-block" src="/img/logo_M.png" width="50" height="50"
+        class="d-inline-block align-text-top">
+    </a>
+    <h4 class="text-white">NOTES-APP</h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about">ABOUT</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            NOTES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/notes">ALL NOTES</a></li>
+            <li><a class="dropdown-item" href="/notes/add">ADD NOTES</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="/users/logout">LOGOUT</a></li>
+          </ul>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/users/signin">SIGNIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/users/signup">SIGNUP</a>
+        </li>
+        {{/if}}
+
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-7 mx-auto">
+    <div class="card mt-1 bg-black border-dark">
+      <div class="card-header text-center bg-dark pt-5" >
+        <h2 class="text-white">
+          INGRESAR CUENTA
+        </h2>
+      </div>
+      <img class="rounded-circle mx-auto d-block m-3 corona" src="/img/logoM_corona.png" alt="corona" />
+      <div class="card-body">
+        <form action="/users/signin" method="POST">
+          <div class="mb-4">
+            <input type="email" class="form-control form-control-lg bg-dark text-white" name="email" placeholder="Email" autofocus />
+          </div>
+          <div class="mb-4">
+            <input type="password" class="form-control form-control-lg bg-dark text-white" name="password" placeholder="Password" />
+          </div>
+          <div class="form-group text-center">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-success btn-block btn-lg text-center" style="background: #000046;">
+              INGRESAR
+            </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <p class="text-center"> <strong>¿NO TIENES UNA CUENTA?</strong> <a href="/users/signup" class="text-info">REGISTRARSE</a></p>
+    </div>
+  </div>
+</div>
